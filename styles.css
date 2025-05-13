@@ -1,0 +1,176 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #bfe9ff, #e0f7ff);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: 600;
+    color: #004a7c;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  
+  /* Formulário e entrada */
+  form,
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  input[type="text"] {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 5px #ccc;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  #search{
+    margin-left: 80px;
+  }
+  
+  button {
+    background: linear-gradient(to bottom, #e0f0ff, #c0dfff);
+    border: 1px solid #a0cfff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 80, 255, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background: linear-gradient(to bottom, #d0ecff, #a0ccff);
+    transform: translateY(-1px);
+  }
+  
+  .task-text.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(4px);
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 6px rgba(0, 80, 255, 0.1);
+  }
+  
+  .actions button {
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    filter: drop-shadow(0 1px 1px #aaa);
+    transition: transform 0.2s;
+  }
+  
+  .actions button:hover {
+    transform: scale(1.2);
+  }
+  
+  .edit-btn:hover {
+    color: #0078d7;
+  }
+  
+  .delete-btn:hover {
+    color: crimson;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(240, 248, 255, 0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+  }
+  
+  .modal-content {
+    background: linear-gradient(145deg, #f2faff, #d4ecff);
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 90, 255, 0.2);
+  }
+  
+  .modal input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #a0cfff;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    gap: 10px;
+  }
+  
+  .wii-footer {
+    width: 100%;
+    padding: 12px 0;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(8px);
+    border-top: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0066aa;
+    margin-top: 60px;
+    border-radius: 16px 16px 0 0;
+    position: absolute;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  img{
+    width: 20px;
+    height: 20px;
+  }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Modal de edição -->
+    <div id="edit-modal" class="modal">
+      <div class="modal-content">
+        <h2>Editar Tarefa</h2>
+        <input type="text" id="edit-input" />
+        <div class="modal-buttons">
+          <button id="save-edit">Salvar</button>
+          <button id="cancel-edit">Cancelar</button>
+        </div>
+      </div>
+    </div>
+    
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+
+    <input type="text" id="search" placeholder="Pesquisar tarefa..."/>
+
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Nova tarefa..." required /> 
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="filters">
+      <label><input type="radio" name="filter" value="all" checked /> Todas</label>
+      <label><input type="radio" name="filter" value="completed" /> Concluídas</label>
+      <label><input type="radio" name="filter" value="pending" /> Pendentes</label>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <footer class="wii-footer">
+    <div class="footer-content">
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
